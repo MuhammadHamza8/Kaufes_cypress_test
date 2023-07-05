@@ -1,0 +1,17 @@
+{
+  "name": "kaufes_testing-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:run": "cypress run "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.16.0",
+    "cypress-slow-down": "^1.2.1",
+    "jenkins": "^1.0.2"
+  }
+}
