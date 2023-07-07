@@ -1,4 +1,4 @@
-image: node:latest
+image: cypress/browsers:node12.14.1-chrome85-ff81
 
 pipelines:
   default:
@@ -6,4 +6,7 @@ pipelines:
         script:
           # install dependencies
           - npm ci
-          - npm cypress run 
+          # start the server in the background
+          - npm run start &
+          # run Cypress tests in Firefox
+          - npx cypress run --browser firefox
