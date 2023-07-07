@@ -5,7 +5,7 @@ pipelines:
     - step:
         name: Install dependencies
         script:
-          - npm ci
+          - npm install
 
     - step:
         name: Run Cypress tests
