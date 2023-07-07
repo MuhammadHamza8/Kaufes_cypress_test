@@ -9,4 +9,4 @@ pipelines:
           # start the server in the background
           - npm run start &
           # run Cypress tests
-          - npm run e2ee
+          - npm run e2e
