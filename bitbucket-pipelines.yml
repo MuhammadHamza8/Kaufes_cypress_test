@@ -1,10 +1,13 @@
-image: node:latest
+image: cypress/browsers:node14.16.0-chrome89-ff86
 
 pipelines:
   default:
     - step:
+        name: Install dependencies
         script:
-          # install dependencies
-          - npm install
-          # run Cypress tests
+          - npm ci
+
+    - step:
+        name: Run Cypress tests
+        script:
           - npx cypress run
