@@ -1,0 +1,10 @@
+# bitbucket-pipelines.yml
+
+pipelines:
+  default:
+    - step:
+        name: Run Cypress tests
+        image: cypress/browsers:node12.18.3-chrome89-ff86
+        script:
+          - npm install
+          - npm run cy:run
